@@ -1,0 +1,10 @@
+#tabla {
+    text-align: center;
+  }
+  
+  #card {
+    background-color: #eed2df;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+  }
