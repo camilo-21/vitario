@@ -240,6 +240,7 @@ nav ul li a button #boton2 {
     color: #fff;
     font-size: 14px;
     position: relative;
+    width: 100%;
   }
   #footer .copyright {
     text-align: center;
@@ -253,3 +254,4 @@ nav ul li a button #boton2 {
   #footer .credits a {
     color: #eed2df;
   }
+

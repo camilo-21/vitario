@@ -14,6 +14,8 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
   <title>Spa de mascotas</title>
 
@@ -83,73 +85,117 @@
   </nav>
   </div>
 
-  <div id="tabla">
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/corte de uñas.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Corte de uñas razas medianas y grandes</h5>
-        <p class="card-text">Duracion - Variable <br> Precio - 4500</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
+  <div id="letra">
+    <div id="tabla">
+      <div class="card"  id="card">
+        <img src="../img/corte de uñas.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Corte de uñas razas medianas y grandes</h5>
+          <p class="card-text">Duracion - Variable <br> Precio - 4500</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
+      </div>
+      <div class="card"  id="card">
+        <img src="../img/corte uñas cachorros.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Corte de uñas razas pequeñas </h5>
+          <p class="card-text">Duracion - Variable <br> Precio - 4500</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
+      </div>
+      <div class="card"  id="card">
+        <img src="../img/limpieza de oidos.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Limpieza de oidos</h5>
+          <p class="card-text">Duracion - 15 minutos <br> Precio - 4500</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
+      </div>
+      <div class="card"  id="card">
+        <img src="../img/perro grande.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Baño y corte razas grandes pelo largo</h5>
+          <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 50000</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/corte uñas cachorros.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Corte de uñas razas pequeñas </h5>
-        <p class="card-text">Duracion - Variable <br> Precio - 4500</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/limpieza de oidos.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Limpieza de oidos <br><br></h5>
-        <p class="card-text">Duracion - 15 minutos <br> Precio - 4500</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/perro grande.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Baño y corte razas grandes pelo largo</h5>
-        <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 50000</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
-      </div>
-    </div>
-  </div>
 
 
-  <div id="tabla">
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/baño perro.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Baño y corte razas grandes pelo corto</h5>
-        <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 30000</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
+    <div id="tabla">
+      <div class="card" id="card">
+        <img src="../img/baño perro.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Baño y corte razas grandes pelo corto</h5>
+          <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 30000</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
+      </div>
+      <div class="card"  id="card">
+        <img src="../img/baño-de-los-perros.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Baño y corte razas medianas pelo largo </h5>
+          <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 35000</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
+      </div>
+      <div class="card" id="card">
+        <img src="../img/baño perro mediano.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Baño y corte razas mediana pelo corto</h5>
+          <p class="card-text">Duracion - 1 hora <br> Precio - 25000</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
+      </div>
+      <div class="card" id="card">
+        <img src="../img/baño perro pequeño.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Baño y corte razas pequeñas pelo largo</h5>
+          <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 30000</p>
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#agendar"> Agendar</button>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/baño-de-los-perros.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Baño y corte razas medianas pelo largo </h5>
-        <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 35000</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/baño perro mediano.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Baño y corte razas mediana pelo corto</h5>
-        <p class="card-text">Duracion - 1 hora <br> Precio - 25000</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
-      </div>
-    </div>
-    <div class="card" style="width: 18rem;" id="card">
-      <img src="../img/baño perro pequeño.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Baño y corte razas pequeñas pelo largo</h5>
-        <p class="card-text">Duracion - 30 minutos a 1 hora <br> Precio - 30000</p>
-        <a href="#" class="btn btn-primary">Agendar</a>
+
+
+
+    <div class="modal" id="agendar" role="dialog" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal">Agendar citas</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            </button>
+          </div>
+          <div class="modal-body">
+            <form action="/examples/actions/confirmation.php" method="post">
+              <h2>Agendar cita</h2>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" name="first_name" placeholder="Nombre de la mascota" required="required">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div id="tipo">
+                  Selecciona tu mascota
+                </div>
+                <label class="form-check-label">
+                  <input type="checkbox"> perro
+                  <input type="checkbox"> Gato
+                </label>
+                <br>
+                <label for="start">Seleccione una fecha:</label>
+                <br>
+                <input type="date" id="start" name="trip-start" value="AAAA-dd-mm" min="2018-01-01">
+              </div>
+          </div>
+          </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Agendar cita</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -167,4 +213,5 @@
   </footer>
 
 </body>
+
 </html>
