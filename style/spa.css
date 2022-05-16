@@ -7,10 +7,15 @@
     padding: 10px;
     margin: 10px;
     display: inline-block;
-    width: 440px;
+    width: 350px;
   }
 
-
+  #tarjeta {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 350px;
+  }
 
 
   .form-control {
